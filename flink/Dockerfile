@@ -35,8 +35,7 @@ RUN echo "-> Install JARs: AWS / Hadoop S3" && \
 
 RUN echo "-> Install JARs: Hadoop" && \
     mkdir -p ./lib/hadoop && \
-    curl https://repo.maven.apache.org/maven2/org/apache/flink/flink-shaded-hadoop-2-uber/2.8.3-10.0/flink-shaded-hadoop-2-uber-2.8.3-10.0.jar -o ./lib/hadoop/flink-shaded-hadoop-2-uber-2.8.3-10.0.jar && \
-    curl https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.648/aws-java-sdk-bundle-1.12.648.jar -o ./lib/aws/aws-java-sdk-bundle-1.12.648.jar
+    curl https://repo.maven.apache.org/maven2/org/apache/flink/flink-shaded-hadoop-2-uber/2.8.3-10.0/flink-shaded-hadoop-2-uber-2.8.3-10.0.jar -o ./lib/hadoop/flink-shaded-hadoop-2-uber-2.8.3-10.0.jar
 
 RUN echo "Purge build artifacts" && \
     apt-get purge -y --auto-remove $build_deps && \
