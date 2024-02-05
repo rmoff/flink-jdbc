@@ -27,7 +27,6 @@ RUN echo "-> Install JARs: Dependencies for Iceberg" && \
     curl https://repo1.maven.org/maven2/org/apache/iceberg/iceberg-flink-runtime-1.17/1.4.3/iceberg-flink-runtime-1.17-1.4.3.jar -o ./lib/iceberg/iceberg-flink-runtime-1.17-1.4.3.jar && \
     curl https://repo1.maven.org/maven2/org/apache/iceberg/iceberg-aws-bundle/1.4.3/iceberg-aws-bundle-1.4.3.jar -o ./lib/iceberg/iceberg-aws-bundle-1.4.3.jar
 
-
 RUN echo "-> Install JARs: AWS / Hadoop S3" && \
     mkdir -p ./lib/aws && \
     curl https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar -o ./lib/aws/hadoop-aws-3.3.4.jar && \
